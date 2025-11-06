@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmacia Martins - Cuidando de Você</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#DC2626', // red-600
+              hover: '#B91C1C' // red-700
+            },
+            secondary: {
+              DEFAULT: '#2563EB', // blue-600
+              dark: '#1E40AF' // blue-800
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-700">
+
+  <header id="main-header"
+    class="bg-white shadow-md fixed top-0 left-0 w-full z-40 transition-transform duration-300 ease-in-out">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#inicio">
+        <img src="img/logo_transparente.png" alt="Farmacia Martins Logo" class="h-9 w-auto">
+      </a>
+
+      <div class="hidden md:flex space-x-6">
+        <a href="#inicio" class="text-gray-600 hover:text-primary-DEFAULT">Início</a>
+        <a href="#sobre" class="text-gray-600 hover:text-primary-DEFAULT">Sobre Nós</a>
+        <a href="#servicos" class="text-gray-600 hover:text-primary-DEFAULT">Serviços</a>
+        <a href="#galeria" class="text-gray-600 hover:text-primary-DEFAULT">Galeria</a>
+        <a href="#contato" class="text-gray-600 hover:text-primary-DEFAULT">Contato</a>
+      </div>
+
+      <a href="https://wa.me/557734520410" target="_blank"
+        class="hidden md:inline-block bg-green-500 text-white px-5 py-2 rounded-full font-medium hover:bg-green-600">
+        Peça pelo WhatsApp
+      </a>
+
+      <button id="mobile-menu-btn" class="md:hidden text-secondary-dark focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <a href="#inicio" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Início</a>
+      <a href="#sobre" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Sobre Nós</a>
+      <a href="#servicos" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Serviços</a>
+      <a href="#galeria" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Galeria</a>
+      <a href="#contato" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Contato</a>
+      <a href="https://wa.me/557734520410" target="_blank"
+        class="block px-4 py-3 bg-green-500 text-white text-center font-medium hover:bg-green-600">
+        Peça pelo WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="h-screen bg-cover bg-center" style="background-image: url('img/5.jpg');">
+      <div class="h-full w-full bg-black/60 flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-white text-4xl md:text-6xl font-bold mb-4">Farmacia Martins</h1>
+        <p class="text-white text-xl md:text-2xl mb-8">Cuidando de você!</p>
+        <a href="https://wa.me/557734520410" target="_blank"
+          class="bg-primary-DEFAULT text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-primary-hover transition-colors">
+          Faça seu Pedido
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="py-20">
+      <div class="container mx-auto px-4 max-w-3xl text-center">
+        <h2 class="text-3xl font-bold text-secondary-dark mb-6">Sobre Nós</h2>
+        <p class="text-lg text-gray-600 mb-4">
+          Bem-vindo à Farmácia Martins, sua parceira de confiança em saúde e bem-estar em Guanambi, Bahia. Desde a nossa fundação em 04/02/2020, nos dedicamos a oferecer um atendimento farmacêutico de excelência, com uma equipe qualificada e atenciosa, pronta para tirar suas dúvidas e garantir que você encontre exatamente o que precisa.
+        </p>
+        <p class="text-lg text-gray-600">
+          Mais do que uma farmácia, somos um centro completo de cuidado. Além de um vasto estoque de medicamentos, oferecemos uma ampla variedade de produtos de perfumaria, cosméticos, itens de higiene pessoal e conveniência, sempre com a qualidade e o preço justo que você merece. Na Farmácia Martins, sua saúde é a nossa prioridade.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-secondary-dark text-center mb-12">Nossos Serviços</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center border-t-4 border-primary-DEFAULT">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <g fill="currentColor">
+                <path fill="none" d="M0 0H24V24H0z" />
+                <path
+                  d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" />
+              </g>
+            </svg>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Medicamentos</h3>
+            <p class="text-gray-600">Amplo estoque de medicamentos de referência, genéricos e similares.</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center border-t-4 border-primary-DEFAULT">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" fill="currentColor" version="1.1"
+              id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 442 442" xml:space="preserve">
+              <g>
+                <path
+                  d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" />
+                <path
+                  d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10		c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682		C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85		c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10		V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10		v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" />
+              </g>
+            </svg>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Perfumaria e Cosméticos</h3>
+            <p class="text-gray-600">As melhores marcas de produtos de beleza, higiene e cuidados pessoais.</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center border-t-4 border-primary-DEFAULT">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.658-.463 1.243-1.117 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.57 0 1.05.417 1.12.993zM12 10.5h.008v.008H12V10.5z" />
+            </svg>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Conveniência</h3>
+            <p class="text-gray-600">Produtos de conveniência, doces e bebidas para sua comodidade.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-secondary-dark text-center mb-12">Nossa Loja</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <img src="img/3.jpg" alt="Balcão da Farmácia Martins"
+            class="w-full h-64 object-cover rounded-lg shadow-md">
+          <img src="img/6.jpg" alt="Corredor da Farmácia Martins"
+            class="w-full h-64 object-cover rounded-lg shadow-md">
+          <img src="img/1.jpg" alt="Seção Mamãe e Bebê" class="w-full h-64 object-cover rounded-lg shadow-md">
+          <img src="img/2.jpg" alt="Seção de beleza e conveniência"
+            class="w-full h-64 object-cover rounded-lg shadow-md sm:col-span-2 md:col-span-1">
+          <img src="img/4.jpg" alt="Corredor de medicamentos"
+            class="w-full h-64 object-cover rounded-lg shadow-md">
+          <img src="img/5.jpg" alt="Corredor de perfumaria" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-secondary-dark text-center mb-12">Contato e Localização</h2>
+        <div
+          class="grid md:grid-cols-2 gap-8 md:gap-0 bg-white shadow-xl rounded-lg overflow-hidden max-w-6xl mx-auto">
+          <div class="p-8 md:p-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Venha nos visitar</h3>
+            <div class="space-y-4 text-gray-600">
+              <p>
+                <strong class="font-medium text-gray-900">Razão Social:</strong><br>
+                MARTINS COMERCIO DE MEDICAMENTOS LTDA
+              </p>
+              <p>
+                <strong class="font-medium text-gray-900">Endereço:</strong><br>
+                R TREZE DE MAIO, 294 B
+              </p>
+              <p>
+                <strong class="font-medium text-gray-900">Bairro:</strong><br>
+                CENTRO
+              </p>
+              <p>
+                <strong class="font-medium text-gray-900">Cidade:</strong><br>
+                GUANAMBI - BA
+              </p>
+              <p>
+                <strong class="font-medium text-gray-900">CEP:</strong><br>
+                46.430-000
+              </p>
+              <p>
+                <strong class="font-medium text-gray-900">Telefone:</strong><br>
+                (77) 3452-0410
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-[400px] md:h-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.880552799307!2d-42.7844!3d-14.225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75e00a9a1d471b7%3A0x6a2c222b9f6b4d3a!2sR.%20Treze%20de%20Maio%2C%20294%20-%20Centro%2C%20Guanambi%20-%20BA%2C%2046430-000!5e0!3m2!1spt-BR!2sbr!4v1670000000000!5m2!1spt-BR!2sbr"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-secondary-dark text-gray-300 py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2025 MARTINS COMERCIO DE MEDICAMENTOS LTDA. Todos os direitos reservados.</p>
+      <p class="mt-2">
+        <a href="#" id="open-privacy-modal" class="hover:text-white underline">Política de Privacidade</a>
+      </p>
+    </div>
+  </footer>
+
+  <div id="privacy-modal"
+    class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300">
+    <div class="bg-white p-6 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-bold text-gray-800">Política de Privacidade</h3>
+        <button id="close-privacy-modal" class="text-gray-500 hover:text-gray-800 text-3xl">×</button>
+      </div>
+      <div class="space-y-3 text-gray-600">
+        <p><strong>Última atualização: 06 de novembro de 2025</strong></p>
+        <p>Este site institucional da Farmacia Martins não coleta ativamente dados pessoais dos seus visitantes.
+          Nossa
+          finalidade é puramente informativa, apresentando nossa empresa, serviços e informações de contato.</p>
+        <p><strong>Cookies:</strong> Não utilizamos cookies de rastreamento, marketing ou análise. Quaisquer cookies
+          utilizados são estritamente essenciais para o funcionamento técnico do site.</p>
+        <p><strong>Coleta de Dados:</strong> Não solicitamos informações pessoais através de formulários, cadastros ou
+          qualquer outro meio neste site. O contato feito por WhatsApp ou e-mail é iniciado pelo usuário, e os dados
+          fornecidos (como nome e número de telefone) serão utilizados exclusivamente para atender à sua solicitação.
+        </p>
+        <p><strong>Links de Terceiros:</strong> Nosso site pode conter links para serviços de terceiros (como
+          WhatsApp e Google Maps). Estes sites possuem suas próprias políticas de privacidade, pelas quais não nos
+          responsabilizamos. Recomendamos a leitura das políticas desses serviços ao utilizá-los.</p>
+        <p><strong>Alterações na Política:</strong> Esta política pode ser atualizada ocasionalmente. Recomendamos
+          revisá-la periodicamente.</p>
+        <p>Ao utilizar este site, você concorda com os termos desta política simples.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
